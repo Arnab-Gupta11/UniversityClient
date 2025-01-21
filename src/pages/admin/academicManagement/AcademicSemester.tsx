@@ -94,7 +94,7 @@ const AcademicSemester = () => {
     }
   };
 
-  return <Table loading={isFetching} columns={columns} dataSource={tableData} onChange={onChange} />;
+  return <Table loading={isFetching} columns={columns} scroll={{ x: 1000, y: 400 }} dataSource={tableData} onChange={onChange} />;
 };
 
 export default AcademicSemester;

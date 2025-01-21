@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 export type TRoute = {
   path: string;
@@ -6,7 +6,7 @@ export type TRoute = {
 };
 export type TSidebarItem =
   | {
-      key: string;
+      key: string | undefined;
       label: ReactNode;
       children?: TSidebarItem[];
     }
